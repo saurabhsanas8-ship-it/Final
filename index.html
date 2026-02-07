@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Miss Devkar ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fdecef;
+  color: #4a4a4a;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hero img {
+  width: 220px;
+  height: 220px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+h1 {
+  letter-spacing: 2px;
+}
+
+.card {
+  background: #f6c1d1;
+  padding: 25px;
+  border-radius: 20px;
+  margin: 20px auto;
+  max-width: 300px;
+  font-weight: bold;
+}
+
+img.full {
+  width: 90%;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+button {
+  background: #e75480;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+  transition: opacity 2s;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <img src="hero.jpg">
+  <h1>MISS DEVKAR,</h1>
+  <p>I have something special</p>
+  <button onclick="reveal()">Read More</button>
+</section>
+
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<section id="content" class="hidden">
+
+  <section>
+    <div class="card">You make my life beautiful</div>
+    <img src="beach.jpg" class="full">
+    <p>
+      You are gorgeous—even in my wildest dreams.<br><br>
+      And all I want is a beautiful life with you.<br><br>
+      You and me, chasing our dreams together,
+      laughing and crying through everything.<br><br>
+      I want nothing more than to hold your hand
+      and enjoy every single moment of our lives.<br><br>
+      You are the most important part of every dream I have.
+    </p>
+    <h3>So… be with me ❤️</h3>
+  </section>
+
+  <section>
+    <p><b>YOUR LIGHT</b><br>You light up my world like nobody else!</p>
+    <p><b>YOUR LAUGHTER</b><br>Whenever I see you laugh, I just want even more of it.</p>
+    <p><b>YOUR CARE</b><br>Mummy sometimes, mommy Devkar 💕</p>
+    <img src="couple1.jpg" class="full">
+  </section>
+
+  <section>
+    <h2>SOOOO… WILL YOU BE MY VALENTINE FOREVER, MISS DEVKAR?</h2>
+    <img src="hug.jpg" class="full">
+  </section>
+
+  <section>
+    <p><b>I’LL MAKE SURE THAT EVERYONE SEES THIS SCREENSHOT!!</b></p>
+    <img src="chat.jpg" class="full">
+  </section>
+
+</section>
+
+<script>
+function reveal() {
+  document.getElementById("music").play();
+  const c = document.getElementById("content");
+  c.style.display = "block";
+  setTimeout(() => c.style.opacity = 1, 200);
+}
+</script>
+
+</body>
+</html>
